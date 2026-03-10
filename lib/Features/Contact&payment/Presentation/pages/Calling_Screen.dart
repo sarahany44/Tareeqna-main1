@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/core/styles.dart';
+import 'package:tareeqna/Features/Contact&payment/Presentation/wedigts/control_button_call.dart';
 import 'package:tareeqna/Features/Authentication/Presentation/wedigts/custom_appbar.dart';
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/custom_profile.dart';
-import 'package:tareeqna/Features/Contact&payment/Presentation/wedigts/control_button_call.dart';
 
 class CallingScreen extends StatefulWidget {
   const CallingScreen({super.key});

@@ -12,7 +12,7 @@ class FeaturesSections extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Car features', style: Styles.headtextStyle24opacity),
+       //   Text('Car features', style: Styles.headtextStyle24opacity),
       
           FeaturesListView(),
         ],

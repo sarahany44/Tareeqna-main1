@@ -43,7 +43,7 @@ class ThankYouDialog extends StatelessWidget {
               height: 50,
               child: CustomButton(
                 text: 'Back Home',
-                type: ButtonType.transportPrimary,
+                type: ButtonType.primary,
                 onPressed: () {
                   Navigator.of(context).popUntil((route) => route.isFirst);
                 },

@@ -46,7 +46,7 @@ class PaymentScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16.0),
         child: CustomButton(
           text: 'Confirm Ride',
-          type: ButtonType.transportPrimary,
+          type: ButtonType.primary,
           onPressed: () {
             showDialog(
               context: context,

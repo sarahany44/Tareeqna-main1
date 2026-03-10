@@ -10,7 +10,7 @@ class SpecificationsSections extends StatelessWidget {
     return Column(
      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Specification', style: Styles.headtextStyle24opacity),
+      //  Text('Specification', style: Styles.headtextStyle24opacity),
 
         SizedBox(
           height: 90,

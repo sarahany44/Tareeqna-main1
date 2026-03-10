@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/widgets/side_menu.dart';
-import 'package:tareeqna/widgets/custom_app_bar.dart';
-import 'package:tareeqna/constant.dart';
 import 'package:tareeqna/widgets/app_text.dart';
+
+import 'package:tareeqna/constant.dart';
 
 class HelpAndSupport extends StatelessWidget {
   const HelpAndSupport({Key? key}) : super(key: key);

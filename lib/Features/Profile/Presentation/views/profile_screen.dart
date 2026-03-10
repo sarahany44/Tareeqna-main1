@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/widgets/custom_app_bar.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:tareeqna/widgets/custom_app_bar.dart';
 import 'dart:io';
 import 'package:tareeqna/constant.dart';
 import 'package:tareeqna/widgets/side_menu.dart';

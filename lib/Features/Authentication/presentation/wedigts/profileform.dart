@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/custom_mobile.dart';
-import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_text_field.dart';
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/custom_dropdown.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated_button.dart';
 
@@ -43,7 +42,7 @@ class ProfileFormSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CustomTextField(controller: fullNameController, text: 'Full Name'),
+        
         const SizedBox(height: 15),
         CustomMobileField(
           controller: mobileController,
@@ -51,13 +50,14 @@ class ProfileFormSection extends StatelessWidget {
           onCountryChanged: onCountryChanged,
         ),
         const SizedBox(height: 15),
-        CustomTextField(
-          controller: emailController,
-          text: 'Email',
-          keyboardType: TextInputType.emailAddress,
-        ),
-        const SizedBox(height: 15),
-        CustomTextField(controller: streetController, text: 'Street'),
+
+        
+
+
+        // const SizedBox(height: 15),
+
+        // CustomTextField(controller: streetController, text: 'Street'),
+        
         const SizedBox(height: 15),
         CustomDropdownField(
           hint: "City",
@@ -78,7 +78,7 @@ class ProfileFormSection extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 text: 'Cancel',
-                type: ButtonType.authPrimary,
+                type: ButtonType.primary,
                 onPressed: onCancel,
               ),
             ),
@@ -86,7 +86,7 @@ class ProfileFormSection extends StatelessWidget {
             Expanded(
               child: CustomButton(
                 text: 'Save',
-                type: ButtonType.authPrimary,
+                type: ButtonType.primary,
                 onPressed: onSave,
               ),
             ),

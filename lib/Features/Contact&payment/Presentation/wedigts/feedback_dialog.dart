@@ -6,7 +6,6 @@ import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated
 import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_text_field.dart';
 import 'package:tareeqna/Features/Contact&payment/presentation/wedigts/rating_stars.dart';
 import 'package:tareeqna/Features/Contact&payment/presentation/wedigts/tips_button.dart';
-import 'package:tareeqna/Features/Contact&payment/presentation/wedigts/custom_amount.dart';
 
 class FeedbackDialog extends StatefulWidget {
   const FeedbackDialog({super.key});
@@ -78,12 +77,13 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
               style: TextStyle(fontSize: 14, color: Colors.grey.shade600),
             ),
             const SizedBox(height: 24),
-            CustomTextField(
-              controller: feedbackController,
-              text: "Write your text",
-              keyboardType: TextInputType.multiline,
-            ),
-            const SizedBox(height: 24),
+            // CustomTextField(
+            //   controller: feedbackController,
+            //   hintText: "Write your feedback",
+            //   keyboardType: TextInputType.multiline,
+            // ),
+
+            // const SizedBox(height: 24),
             TipButtons(
               tipOptions: tipOptions,
               selectedTipAmount: selectedTipAmount,
@@ -103,7 +103,7 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
             ),
             if (showCustomAmount) ...[
               const SizedBox(height: 12),
-              CustomAmountField(controller: customAmountController),
+            //  CustomAmountField(controller: customAmountController),
             ],
             const SizedBox(height: 24),
             SizedBox(
@@ -111,7 +111,7 @@ class _FeedbackDialogState extends State<FeedbackDialog> {
               height: 50,
               child: CustomButton(
                 text: "Submit",
-                type: ButtonType.transportPrimary,
+                type: ButtonType.primary,
                 onPressed: () {
                   Navigator.of(context).pop();
                   showDialog(

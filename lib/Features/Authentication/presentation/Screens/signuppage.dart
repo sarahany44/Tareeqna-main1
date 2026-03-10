@@ -75,7 +75,8 @@ class _SignUpPageState extends State<SignUpPage> {
       ],
       actionButton: CustomButton(
         text: "Sign Up",
-        type: ButtonType.authPrimary,
+       // type: ButtonType.authPrimary,
+        type: ButtonType.primary,
         onPressed: () {
           Navigator.push(
             context,
@@ -85,7 +86,8 @@ class _SignUpPageState extends State<SignUpPage> {
           );
         },
       ),
-      bottomLink: const BottomLink(),
+     //bottomLink: const BottomLink(),
+     // bottomLink: BottomLink(),
     );
   }
 

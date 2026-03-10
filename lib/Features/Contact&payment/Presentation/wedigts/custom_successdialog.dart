@@ -75,7 +75,7 @@ class PaymentSuccessDialog extends StatelessWidget {
             SizedBox(height: 20),
             CustomButton(
               text: 'Please Feedback',
-              type: ButtonType.transportPrimary,
+              type: ButtonType.primary,
               onPressed: () {
                 Navigator.of(context).pop();
                 showDialog(

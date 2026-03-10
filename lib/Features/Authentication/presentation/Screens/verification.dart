@@ -6,6 +6,7 @@ import 'package:tareeqna/Features/Authentication/presentation/wedigts/custom_app
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/buildOTP.dart';
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/resend_otp.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated_button.dart';
+import 'package:tareeqna/Features/Authentication/presentation/Screens/setpassword.dart';
 
 class VerificationPage extends StatefulWidget {
   final String phoneNumber;
@@ -113,7 +114,7 @@ class _VerificationPageState extends State<VerificationPage> {
   Widget _buildVerifyUpButton() {
     return CustomButton(
       text: "Verify",
-      type: ButtonType.authPrimary,
+      type: ButtonType.primary,
       onPressed: () {
         Navigator.push(
           context,

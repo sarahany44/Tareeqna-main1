@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/thank_you_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated_button.dart';
-import 'package:tareeqna/constant.dart';
+
 
 class PaymentSelectionColumn extends StatefulWidget {
   const PaymentSelectionColumn({super.key});

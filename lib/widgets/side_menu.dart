@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../constant.dart';
-import 'package:tareeqna/Features/about_us/presentation/about_us_screen.dart';
+import 'package:tareeqna/Features/aboutUs/presentation/views/about_us_screen.dart';
 import 'package:tareeqna/Features/help_and_support/Presentation/help_and_support.dart';
+import 'package:tareeqna/constant.dart';
 class SideMenu extends StatelessWidget {
   const SideMenu({Key? key}) : super(key: key);
 

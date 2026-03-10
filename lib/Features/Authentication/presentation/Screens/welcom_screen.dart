@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tareeqna/Features/Authentication/presentation/Screens/loginpage.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/signuppage.dart';
 import 'package:tareeqna/constant.dart';
 
 class WelcomScreen extends StatelessWidget {
@@ -41,7 +40,7 @@ class WelcomScreen extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SignUpPage()),
+                      MaterialPageRoute(builder: (context) => LoginPage()),
                     );
                   },
                   style: ElevatedButton.styleFrom(

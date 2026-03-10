@@ -1,22 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:tareeqna/Features/onBoarding/Presentation/views/on_boarding_screen.dart';
-import 'package:tareeqna/Features/main_layout/Presentation/views/main_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:tareeqna/Features/Authentication/presentation/Screens/SetPassword.dart';
+import 'package:tareeqna/Features/Authentication/presentation/Screens/setnewpassword.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-
-
-  SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(
-        statusBarColor: Colors.white,
-        statusBarIconBrightness: Brightness.dark,
-        systemNavigationBarColor: Colors.white,
-        systemNavigationBarIconBrightness: Brightness.dark,
-        systemNavigationBarDividerColor: Colors.white,
-          ),
-  );
   runApp(const TAREEQNA());
 }
 
@@ -31,32 +18,31 @@ class TAREEQNA extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: const Color(0xFF1ABC9C),
-       // textTheme: GoogleFonts.poppinsTextTheme(),
 
         scaffoldBackgroundColor: Colors.white,
-        appBarTheme:const AppBarTheme(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Colors.white,
-            statusBarIconBrightness: Brightness.dark,
+        textTheme: const TextTheme(
+          headlineSmall: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
           ),
-        ),
-        textTheme: GoogleFonts.poppinsTextTheme(
-          Theme.of(context).textTheme.apply(
-            fontSizeFactor: 0.6,
-          ),
+          bodyMedium: TextStyle(fontSize: 14, color: Colors.grey),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF1ABC9C),
-            shape: const CircleBorder(),
+           // shape: const CircleBorder(),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
             padding: const EdgeInsets.all(20),
           ),
         ),
       ),
-      home: const MainScreen(),
-    //  home: const OnboardingScreen(),
+
+     //home: const OnboardingScreen(),
+    ///  home: const SetnewPasswordPage(),
+   home: const SetPasswordPage(),
       // OnboardingScreen(),
     );
   }

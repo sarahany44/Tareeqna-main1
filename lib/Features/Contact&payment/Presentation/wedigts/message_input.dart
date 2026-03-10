@@ -55,9 +55,9 @@ class MessageInput extends StatelessWidget {
         decoration: InputDecoration(
           hintText: "Type your message",
           border: InputBorder.none,
-          hintStyle: Styles.textStyle18.copyWith(color: Colors.grey.shade500),
+      //    hintStyle: Styles.textStyle18.copyWith(color: Colors.grey.shade500),
         ),
-        style: Styles.textStyle18,
+      //  style: Styles.textStyle18,
       ),
     );
   }

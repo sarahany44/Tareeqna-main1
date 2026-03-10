@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/complete_profile.dart';
 import 'package:tareeqna/Features/Authentication/presentation/Screens/loginpage.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/sendverfication.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/setnewpassword.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/signuppage.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/verification.dart';
-import 'package:tareeqna/Features/Authentication/presentation/Screens/welcom_screen.dart';
-import 'package:tareeqna/Features/Contact&payment/presentation/pages/Calling_Screen.dart';
-import 'package:tareeqna/Features/Contact&payment/presentation/pages/Message_Screen.dart';
-import 'package:tareeqna/Features/Contact&payment/presentation/pages/Payment.dart';
-import 'package:tareeqna/Features/Contact&payment/Presentation/pages/Payment.dart';
-import 'package:tareeqna/Features/Home/Presentation/views/home_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/car_details_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/request_rent_step1.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/select_available_cars_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/select_transport_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/thank_you_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/widgets/payment_method.dart';
+import 'package:tareeqna/Features/Authentication/presentation/Screens/registerScreen/register_screen.dart';
+import 'package:tareeqna/Features/Home/Presentation/views/home_map_screen.dart';
 import 'package:tareeqna/constant.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -60,15 +45,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     } else {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => CallingScreen()), // next screen
+        MaterialPageRoute(builder: (_) => RegisterScreen() ), // next screen
       );
     }
   }
 
+  // 
+  // 
   void _skip() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (_) => const HomeScreen()),
+      MaterialPageRoute(builder: (_) => const HomeMapScreen()),
     );
   }
 

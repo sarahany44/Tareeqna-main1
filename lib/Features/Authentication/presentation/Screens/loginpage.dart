@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tareeqna/Features/Authentication/presentation/wedigts/Custom_Socialbutton.dart';
 import 'package:tareeqna/Features/Authentication/presentation/Screens/sendverfication.dart';
-import 'package:tareeqna/Features/Home/Presentation/views/home_screen.dart';
-import 'package:tareeqna/constant.dart';
+import 'package:tareeqna/Features/main_layout/Presentation/views/main_screen.dart';
 import 'package:tareeqna/Features/Authentication/presentation/Screens/signuppage.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_text_field.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated_button.dart';
@@ -59,11 +58,11 @@ class _LoginPageState extends State<LoginPage> {
       ],
       actionButton: CustomButton(
         text: "Sign In",
-        type: ButtonType.authPrimary,
+        type: ButtonType.primary,
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => const HomeScreen()),
+            MaterialPageRoute(builder: (_) => const MainScreen()),
           );
         },
       ),

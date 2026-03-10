@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tareeqna/Features/Transport/Presentation/views/thank_you_screen.dart';
-import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_elevated_button.dart';
-import 'package:tareeqna/Features/Transport/Presentation/widgets/custom_text_field.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/payment_method.dart';
 import 'package:tareeqna/Features/Transport/Presentation/widgets/smal_car_item_card.dart';
 import 'package:tareeqna/core/styles.dart';
@@ -35,7 +32,7 @@ class _RequestRentStep1State extends State<RequestRentStep1> {
                     children: [
                       Text(
                         'Current Location',
-                        style: Styles.textStyle20.copyWith(color: Colors.black),
+                      //  style: Styles.textStyle20.copyWith(color: Colors.black),
                       ),
                       Text(
                         '2972 Westheimer Rd. Santa Ana, Illinois 85486 ',
@@ -57,9 +54,9 @@ class _RequestRentStep1State extends State<RequestRentStep1> {
                       children: [
                         Text(
                           'Office',
-                          style: Styles.textStyle20.copyWith(
-                            color: Colors.black,
-                          ),
+                       //   style: Styles.textStyle20.copyWith(
+                     //       color: Colors.black,
+                        //  ),
                         ),
                         Text(
                           '2972 Westheimer Rd. Santa Ana, Illinois 85486 ',
@@ -77,11 +74,11 @@ class _RequestRentStep1State extends State<RequestRentStep1> {
 
               SizedBox(height: 10),
 
-              CustomTextField(text: 'Date'),
+           //   CustomTextField(text: 'Date'),
 
               SizedBox(height: 10),
 
-              CustomTextField(text: 'Time'),
+            //  CustomTextField(text: 'Time'),
               SizedBox(height: 20),
 
               // Payment Section

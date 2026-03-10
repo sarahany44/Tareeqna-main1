@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '../constant.dart';
-import 'app_text.dart';
+import 'package:tareeqna/widgets/app_text.dart';
+import 'package:tareeqna/constant.dart';
+
 
 class CustomAppBar extends StatelessWidget {
   final String title;

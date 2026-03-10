@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:tareeqna/Features/about_us/presentation/about_us_screen.dart';
+
 class AppText extends StatelessWidget {
   final String text;
   final double fontSize;

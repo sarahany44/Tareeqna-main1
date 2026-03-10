@@ -86,7 +86,7 @@ class _SendVerificationScreenState extends State<SendVerificationScreen> {
         padding: const EdgeInsets.only(top: 350.0),
         child: CustomButton(
           text: _isLoading ? "Sending..." : "Send OTP",
-          type: ButtonType.authPrimary,
+          type: ButtonType.primary,
           onPressed: _isLoading ? null : _handleSendOTP,
         ),
       ),

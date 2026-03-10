@@ -29,7 +29,7 @@ class SelectAvailableCarsScreen extends StatelessWidget {
           children: [
             const Text(
               'Available cars for ride',
-              style: Styles.headtextStyle24
+              //style: Styles.headtextStyle24
             ),
             Text(
               '18 Cars Found',

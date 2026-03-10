@@ -40,7 +40,7 @@ class CarDetailsScreen extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Mustang Shelby GT', style: Styles.headtextStyle24),
+                 // Text('Mustang Shelby GT', style: Styles.headtextStyle24),
 
                   Row(
                     children: [
@@ -63,7 +63,7 @@ class CarDetailsScreen extends StatelessWidget {
                       Expanded(
                         child: CustomButton(
                           text: "Book later",
-                          type: ButtonType.transportSecondary,
+                          type: ButtonType.secondary,
                           onPressed: () {
                             Navigator.push(
                               context,
@@ -78,7 +78,7 @@ class CarDetailsScreen extends StatelessWidget {
                       Expanded(
                         child: CustomButton(
                           text: "Ride Now",
-                          type: ButtonType.transportPrimary,
+                          type: ButtonType.primary,
                           onPressed: () {
                             Navigator.push(
                               context,

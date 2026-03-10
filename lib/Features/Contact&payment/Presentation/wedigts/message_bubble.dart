@@ -42,13 +42,13 @@ class MessageBubble extends StatelessWidget {
           ),
           child: Text(
             message.text,
-            style: Styles.textStyle18.copyWith(color: Colors.black),
+            //style: Styles.textStyle18.copyWith(color: Colors.black),
           ),
         ),
         const SizedBox(height: 4),
         Text(
           message.timestamp,
-          style: Styles.textStyle14.copyWith(fontSize: 12),
+         // style: Styles.textStyle14.copyWith(fontSize: 12),
         ),
       ],
     );

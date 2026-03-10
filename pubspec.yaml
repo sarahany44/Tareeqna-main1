@@ -30,11 +30,19 @@ environment:
 dependencies:
   country_code_picker: ^3.0.0
   cupertino_icons: ^1.0.8
+  dartz: ^0.10.1
+  dio: ^5.9.1
+  equatable: ^2.0.8
   flutter:
     sdk: flutter
-  google_fonts: ^6.1.0
-  shared_preferences: ^2.2.2
-  image_picker: ^0.8.7+6
+  flutter_bloc: ^9.1.1
+  flutter_map: ^8.2.2
+  geolocator: ^14.0.2
+  get_it: ^9.2.1
+  google_fonts: ^6.3.3
+  image_picker: ^1.2.1
+  latlong2: ^0.9.1
+  pinput: ^6.0.2
 
 dev_dependencies:
   flutter_lints: ^5.0.0

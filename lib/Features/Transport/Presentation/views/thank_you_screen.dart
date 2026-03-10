@@ -32,7 +32,7 @@ class ThankYouScreen extends StatelessWidget {
 
               CustomButton(
                 text: 'Back to home',
-                type: ButtonType.authPrimary,
+                type: ButtonType.primary,
 
                 onPressed: () {
                   Navigator.push(

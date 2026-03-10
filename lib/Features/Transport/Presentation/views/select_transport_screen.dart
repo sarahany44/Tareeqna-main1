@@ -20,7 +20,7 @@ class SelectTransportScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text(
           'Select your transport',
-          style: Styles.headtextStyle24,
+         // style: Styles.headtextStyle24,
         ),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios, color: Colors.black),

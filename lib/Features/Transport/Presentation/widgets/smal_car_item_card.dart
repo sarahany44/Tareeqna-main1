@@ -27,7 +27,7 @@ class SmallCarItemCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Mustang Shelby GT', style: Styles.headtextStyle20),
+                  //    Text('Mustang Shelby GT', style: Styles.headtextStyle20),
 
                       const Row(
                         children: [
